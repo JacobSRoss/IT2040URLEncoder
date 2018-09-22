@@ -1,0 +1,7 @@
+C:\Users\Jacob 2015\Desktop\IT2040\IT2040URLEncoder\IT2040URLEncoder\obj\Debug\IT2040URLEncoder.csprojAssemblyReference.cache
+C:\Users\Jacob 2015\Desktop\IT2040\IT2040URLEncoder\IT2040URLEncoder\obj\Debug\IT2040URLEncoder.csproj.CoreCompileInputs.cache
+C:\Users\Jacob 2015\Desktop\IT2040\IT2040URLEncoder\IT2040URLEncoder\bin\Debug\IT2040URLEncoder.exe.config
+C:\Users\Jacob 2015\Desktop\IT2040\IT2040URLEncoder\IT2040URLEncoder\bin\Debug\IT2040URLEncoder.exe
+C:\Users\Jacob 2015\Desktop\IT2040\IT2040URLEncoder\IT2040URLEncoder\bin\Debug\IT2040URLEncoder.pdb
+C:\Users\Jacob 2015\Desktop\IT2040\IT2040URLEncoder\IT2040URLEncoder\obj\Debug\IT2040URLEncoder.exe
+C:\Users\Jacob 2015\Desktop\IT2040\IT2040URLEncoder\IT2040URLEncoder\obj\Debug\IT2040URLEncoder.pdb
