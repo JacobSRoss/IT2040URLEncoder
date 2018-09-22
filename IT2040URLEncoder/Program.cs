@@ -21,8 +21,18 @@ namespace IT2040URLEncoder
                 Console.WriteLine("Welcome to the URL Encoder!");
                 Console.WriteLine("Project Name?: ");
                 projectName = Console.ReadLine();
+                while(CheckControl(projectName) == false){
+                    Console.WriteLine("Invalid control characters were input, please try again.");
+                    Console.WriteLine("Project Name?: ");
+                    projectName = Console.ReadLine();
+                }
                 Console.WriteLine("Activity Name?: ");
                 activityName = Console.ReadLine();
+                while(CheckControl(activityName) == false){
+                    Console.WriteLine("Invalid control characters were input, please try again.");
+                    Console.WriteLine("Activity Name?: ");
+                    activityName = Console.ReadLine();
+                }
                 newProjectName = URLEncode(projectName);
                 newActivityName = URLEncode(activityName);
                 Console.WriteLine(newProjectName);
@@ -41,7 +51,12 @@ namespace IT2040URLEncoder
                 }
             }
         }
-        public bool CheckControl(String str){
+        static bool CheckControl(String str){
+            foreach(char c in str){
+                if(char.IsControl(c)){
+                    return false;
+                }
+            }
             return true;
         }
         static String URLEncode(String str){
