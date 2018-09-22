@@ -14,19 +14,32 @@ namespace IT2040URLEncoder
             String activityName = "";
             String newProjectName = "";
             String newActivityName = "";
+            Boolean restart = true;
+            String answerString = "";
 
-
-            Console.WriteLine("Welcome to the URL Encoder!");
-            Console.WriteLine("Project Name?: ");
-            projectName = Console.ReadLine();
-            Console.WriteLine("Activity Name?: ");
-            activityName = Console.ReadLine();
-            newProjectName = URLEncode(projectName);
-            newActivityName = URLEncode(activityName);
-            Console.WriteLine(newProjectName);
-            Console.WriteLine(newActivityName);
-            Console.WriteLine("https://companyserver.com/content/"+newProjectName+"/files/"+newActivityName+"/"+newActivityName+"Report.pdf");
-            Console.ReadLine();
+            while(restart == true){
+                Console.WriteLine("Welcome to the URL Encoder!");
+                Console.WriteLine("Project Name?: ");
+                projectName = Console.ReadLine();
+                Console.WriteLine("Activity Name?: ");
+                activityName = Console.ReadLine();
+                newProjectName = URLEncode(projectName);
+                newActivityName = URLEncode(activityName);
+                Console.WriteLine(newProjectName);
+                Console.WriteLine(newActivityName);
+                Console.WriteLine("Your URL is: ");
+                Console.WriteLine("https://companyserver.com/content/"+newProjectName+"/files/"+newActivityName+"/"+newActivityName+"Report.pdf");
+                Console.WriteLine("");
+                while(restart){
+                    Console.WriteLine("Would you like to create another URL? Please answer 'Yes' or 'No': ");
+                    answerString = Console.ReadLine();
+                    if(answerString == "No"){
+                        restart = false;
+                    } else if (answerString == "Yes"){
+                        break;
+                    }
+                }
+            }
         }
         public bool CheckControl(String str){
             return true;
